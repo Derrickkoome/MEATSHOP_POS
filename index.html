@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THE MEAT SHED — POS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>THE MEAT SHED</h1>
+        <small>Point-Of-Sale (POS)</small>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+          <li><a href="#sales" class="nav-link">Sales</a></li>
+          <li><a href="#inventory" class="nav-link">Inventory</a></li>
+          <li><a href="#reports" class="nav-link">Reports</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <small>Logged in as: <strong>Attendant</strong></small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- DASHBOARD -->
+      <section id="dashboard" class="section active">
+        <header class="section-header">
+          <h2>Dashboard</h2>
+        </header>
+
+        <div class="cards-row">
+          <div class="card">
+            <h3>Inventory Value</h3>
+            <p id="inventoryValue">KSh 0</p>
+          </div>
+          <div class="card">
+            <h3>Today's Sales</h3>
+            <p id="todaysSales">KSh 0</p>
+          </div>
+          <div class="card">
+            <h3>Low Stock Items</h3>
+            <p id="lowStockCount">0</p>
+          </div>
+        </div>
+
+        <div class="recent">
+          <h3>Recent Sales</h3>
+          <table class="table">
+            <thead>
+              <tr><th>Time</th><th>Items</th><th>Total</th></tr>
+            </thead>
+            <tbody id="recentSalesBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SALES / POS -->
+      <section id="sales" class="section">
+        <header class="section-header">
+          <h2>Sales</h2>
+        </header>
+
+        <div class="sales-layout">
+          <div class="products-panel">
+            <div class="products-toolbar">
+              <input id="productSearch" placeholder="Search products..." />
+              <select id="categoryFilter">
+                <option value="All">All</option>
+                <option>Beef</option>
+                <option>Chicken</option>
+                <option>Pork</option>
+                <option>Bacon</option>
+                <option>Sausages</option>
+              </select>
+            </div>
+
+            <div id="products-list" class="product-list">
+              <!-- product cards injected here -->
+            </div>
+          </div>
+
+          <aside class="cart-panel">
+            <h3>Cart</h3>
+            <div id="cart-items" class="cart-items"></div>
+
+            <div class="cart-summary">
+              <div class="row"><span>Subtotal</span><span id="cart-subtotal">KSh 0</span></div>
+              <div class="row"><span>Tax (16%)</span><span id="cart-tax">KSh 0</span></div>
+              <div class="row total"><span>Total</span><span id="cart-total">KSh 0</span></div>
+            </div>
+
+            <div class="cart-actions">
+              <button id="clear-cart" class="btn">Clear</button>
+              <button id="checkout-btn" class="btn primary">Checkout</button>
+            </div>
+
+            <div id="sales-balance" class="sales-balance"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- INVENTORY -->
+      <section id="inventory" class="section">
+        <header class="section-header">
+          <h2>Inventory</h2>
+          <div>
+            <button id="add-product-btn" class="btn primary">+ Add Product</button>
+            <input id="inventorySearch" placeholder="Search inventory..." />
+          </div>
+        </header>
+
+        <div class="inventory-table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th><th>Name</th><th>Category</th><th>Price (KSh)</th><th>Stock</th><th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="inventory-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- REPORTS -->
+      <section id="reports" class="section">
+        <header class="section-header">
+          <h2>Reports — Sales History</h2>
+        </header>
+
+        <div id="sales-history"></div>
+        <div id="daily-summary" style="margin-top:1.5rem"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- PRODUCT MODAL -->
+  <div id="productModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <h3 id="productModalTitle">Add Product</h3>
+      <form id="productForm">
+        <input type="hidden" id="product-id" />
+        <label>
+          Name
+          <input id="product-name" required />
+        </label>
+        <label>
+          Category
+          <select id="product-category">
+            <option>Beef</option>
+            <option>Chicken</option>
+            <option>Pork</option>
+            <option>Bacon</option>
+            <option>Sausages</option>
+          </select>
+        </label>
+        <label>
+          Price (KSh)
+          <input id="product-price" type="number" min="0" required />
+        </label>
+        <label>
+          Stock
+          <input id="product-stock" type="number" min="0" required />
+        </label>
+        <label>
+          Image URL (optional)
+          <input id="product-image" placeholder="images/product.jpg" />
+        </label>
+
+        <div class="modal-actions">
+          <button type="button" id="closeProductModal" class="btn">Cancel</button>
+          <button type="submit" class="btn primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Beef Steak",
+      "category": "Beef",
+      "price": 800,
+      "stock": 19,
+      "image": "https://i.pinimg.com/1200x/ed/02/c6/ed02c68380b329fc87803b5efea53c1c.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Beef Mince",
+      "category": "Beef",
+      "price": 650,
+      "stock": 14,
+      "image": "https://i.pinimg.com/736x/9e/19/9b/9e199bccefa45cd8d867766b6fac27de.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Whole Chicken",
+      "category": "Chicken",
+      "price": 1200,
+      "stock": 9,
+      "image": "https://i.pinimg.com/1200x/b5/05/fb/b505fbdba0159c61a07735c9afbc3ac8.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Chicken Wings",
+      "category": "Chicken",
+      "price": 500,
+      "stock": 25,
+      "image": "https://i.pinimg.com/1200x/9f/37/4e/9f374e60c3c4cc0033feb21d8578e366.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Pork Chops",
+      "category": "Pork",
+      "price": 700,
+      "stock": 12,
+      "image": "https://i.pinimg.com/736x/4c/8b/df/4c8bdfa3b6723eb774b40c831e31b8a9.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Pork Ribs",
+      "category": "Pork",
+      "price": 950,
+      "stock": 8,
+      "image": "https://i.pinimg.com/1200x/b7/3a/81/b73a815cd681a595f615592bb291da87.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Smoked Bacon",
+      "category": "Bacon",
+      "price": 850,
+      "stock": 18,
+      "image": "https://i.pinimg.com/1200x/cb/0c/4d/cb0c4d84990bea9e4a04a83521566f17.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Streaky Bacon",
+      "category": "Bacon",
+      "price": 900,
+      "stock": 10,
+      "image": "https://i.pinimg.com/736x/e6/93/15/e6931549f6f2a3c19aabf8f096033e3a.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Beef Sausages",
+      "category": "Sausages",
+      "price": 400,
+      "stock": 30,
+      "image": "https://i.pinimg.com/736x/be/13/ce/be13ce376a6b88fc145b3b85f439d51c.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Chicken Sausages",
+      "category": "Sausages",
+      "price": 380,
+      "stock": 25,
+      "image": "https://i.pinimg.com/1200x/10/f9/b9/10f9b9f888cdd3fe4ddca02ab3b08ec1.jpg"
+    }
+  ],
+  "sales": [
+    {
+      "id": "29c7",
+      "items": [
+        {
+          "id": "1",
+          "name": "Beef Steak",
+          "price": 800,
+          "qty": 1
+        },
+        {
+          "id": "2",
+          "name": "Beef Mince",
+          "price": 650,
+          "qty": 1
+        },
+        {
+          "id": "3",
+          "name": "Whole Chicken",
+          "price": 1200,
+          "qty": 1
+        }
+      ],
+      "total": 2650,
+      "date": "2025-09-27T21:44:02.574Z",
+      "inventoryBefore": 112050,
+      "inventoryAfter": 109400
+    }
+  ]
+}
