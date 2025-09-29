@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "/api";
 
 // --------- DOM REFS ----------
 const navLinks = document.querySelectorAll(".nav-link");
