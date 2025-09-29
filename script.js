@@ -1,15 +1,3 @@
-/**
- * THE MEAT SHED — POS (script.js)
- * Requires json-server running at http://localhost:3000
- *
- * Features:
- * - Inventory & Sales CRUD (via json-server)
- * - Cart with qty controls
- * - Inventory deduction on checkout (with stock validation)
- * - Records sale with inventoryBefore & inventoryAfter
- * - Sales history + Daily summary
- */
-
 const API_URL = "http://localhost:3000";
 
 // --------- DOM REFS ----------
