@@ -2,30 +2,30 @@
 
 **Smart Meat Shop Management Made Simple**  
 
-The Meat Shed POS is a modern **Point of Sale system** designed for a Kenyan butcher shop. It combines simplicity with functionality, making it easy to **manage inventory, process sales, and track balances** — all in one clean interface.  
+The Meat Shed POS is a modern **Point of Sale system** tailored for a local meat shop in Kenya.  
+It combines a clean front-end with a simple backend powered by `json-server` to make inventory and sales management seamless.  
 
 ---
 
-## 🌟 Why The Meat Shed POS?
-Running a meat shop requires speed, accuracy, and organization. This POS system was built to:  
-- Keep track of **Beef, Chicken, Pork, Bacon, and Sausages** in real time.  
-- Automatically **update inventory balances** whenever a sale is made.  
-- Provide clear **sales history reports** so you always know what’s selling and what’s left.  
-- Showcase products with **images** for an attractive and user-friendly experience.  
+## 🌟 What It Does
+- 📦 **Inventory Management** – Track products in categories: Beef, Chicken, Pork, Bacon, and Sausages.  
+- 🛒 **Sales System** – Add products to cart, process checkout, and auto-deduct from stock.  
+- 💰 **Balance Updates** – Inventory and sales balances adjust instantly after each transaction.  
+- 📊 **Sales History** – Mini reports showing each sale with remaining balance.  
+- 🖼️ **Product Images** – Visual representation of products for a more engaging POS experience.  
 
 ---
 
-## ✨ Core Features
-- 📦 **Inventory Management** – Organized by product category.  
-- 🛒 **Smart Sales Processing** – Cart-based checkout that updates stock instantly.  
-- 💰 **Dynamic Balances** – Real-time adjustments to sales and inventory.  
-- 📊 **Sales Reports** – Mini history reports with remaining balances per transaction.  
-- 🖼️ **Product Images** – Each item is visually represented for clarity and branding.  
+## 🚀 Why It Stands Out
+- Designed with **Kenyan butcheries and small shops** in mind.  
+- Runs smoothly with a lightweight backend (`json-server`), making it easy to demo and extend.  
+- Deployed on **Render**, so the frontend and backend live together under one roof.  
 
 ---
 
-## 🚀 Built For
-Local butcheries, small shops, and businesses that need a **lightweight, offline-friendly POS** without the overhead of complex systems.  
+## 🌍 Live Demo
+🔗 [Click here to try The Meat Shed POS](https://meatshed-pos.onrender.com/)  
+ 
 
 ---
 
